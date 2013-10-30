@@ -11,7 +11,7 @@
 					<div id='footermenu'>
 						<?php wp_nav_menu(array('menu_class' => 'nav_footer', 'theme_location' => 'footer_menu', 'depth' => '2', 'fallback_cb' => false)); ?>
 					</div>
-					&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?>. WordPress Theme created by <a href="http://www.cpothemes.com">CPOThemes</a>.
+					&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?>. Website provided by <a href="http://sensetecnic.com">Sense Tecnic</a>.
 				</div>
 			</div>
 			<div class="clear"></div>
