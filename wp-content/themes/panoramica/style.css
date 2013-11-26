@@ -821,3 +821,7 @@ Includes all widget-related elements
 #slider .pages{
 	z-index: 10 !important; /*menu hover bug fix*/
 }
+
+#gaiframe{
+	display:none !important;
+}
