@@ -814,3 +814,10 @@ Includes all widget-related elements
 .twitter_stream li.tweet { position:relative; list-style:none; background:none; margin:0 0 10px 0; padding:0 0 0 30px; font-size:0.9em; }
 .twitter_stream li .tweet_content { margin:0; }
 .twitter_stream li .tweet_date { display:block; text-align:right; }
+
+/* ---------------------------------------------------------------------- */
+/* CUSTOM CSS SECTION */
+
+#slider .pages{
+	z-index: 10 !important; /*menu hover bug fix*/
+}
