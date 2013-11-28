@@ -27,16 +27,22 @@
 	</div>
 		
 	<div class="container">		
-		<div id="content">
 			<?php if(have_posts()): while(have_posts()): the_post(); ?>
-			<?php get_template_part('element', 'blog'); ?>
+				<?php if ( in_category( "Apps" ) ): ?>
+					<div id="content" class="wide">
+						<?php get_template_part( 'app-item-large', 'index' ); ?>
+						<?php cpotheme_pagination(); ?>
+					</div>
+				<?php else: ?>
+					<div id="content">
+						<?php get_template_part('element', 'blog'); ?>
+						<?php cpotheme_pagination(); ?>
+					</div>
+					<?php get_sidebar('blog'); ?>
+				<?php endif; ?>
+
 			<?php endwhile; ?>
-			<?php cpotheme_pagination(); ?>
 			<?php endif; ?>
-			
-		</div>
-		<?php get_sidebar('blog'); ?>
-	</div>
 </div>
 
 <?php get_footer(); ?>

@@ -66,6 +66,12 @@ jQuery(document).ready(function(){
 			scrollTop: jQuery(target_id).offset().top
 		}, 1000);
 	});
+
+	if(jQuery(".app-screenshots").length){
+		jQuery("a[rel^='prettyPhoto']").prettyPhoto({
+		  social_tools: ""
+		});
+	}
 });
 
 //Formats Twitter strings with links

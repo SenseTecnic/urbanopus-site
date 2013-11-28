@@ -135,14 +135,22 @@ function cpotheme_logo($width, $height){
 	}
 	
 	$classes = '';
-	if(cpotheme_get_option('cpo_general_texttitle') == 0) $classes = ' hidden';
-	if(is_singular() && !is_front_page()){
-		$output .= '<span class="title'.$classes.'"><a href="'.home_url().'">'.get_bloginfo('name').'</a></span>';
-	}else{
-		$output .= '<h1 class="title'.$classes.'"><a href="'.home_url().'"><img style="vertical-align:middle" src="'.cpotheme_get_option('cpo_general_logo').'" alt="'.get_bloginfo('name').'"/>'.get_bloginfo('name').'</a></h1>';
-	}
-	
-	$output .= '<span class="description">'.get_bloginfo('description').'</span>';
+	// if(cpotheme_get_option('cpo_general_texttitle') == 0) $classes = ' hidden';
+	// if(is_singular() && !is_front_page()){
+	// 	$output .= '<span class="title'.$classes.'"><a href="'.home_url().'">'.get_bloginfo('name').'</a></span>';
+	// }else{
+	// 	$output .= '<h1 class="title'.$classes.'">';
+	// 	$output .= '<img style="vertical-align:middle" src="'.cpotheme_get_option('cpo_general_logo').'" alt="'.get_bloginfo('name').'"/>';
+	// 	$output .= '<a href="'.home_url().'">'.get_bloginfo('name').'</a>';
+	// 	$output .= '</h1>';
+	// }
+	$output .= '<h1 class="title'.$classes.'">';
+	$output .= '<img style="vertical-align:middle" src="'.cpotheme_get_option('cpo_general_logo').'" alt="'.get_bloginfo('name').'"/>';
+	$output .= '<a href="'.home_url().'">'.get_bloginfo('name').'</a>';
+	$output .= '</h1>';
+
+	$output .= '<span class="description">'.get_bloginfo('description').'</span>';	
+
 	$output .= '</div>';
 	echo $output;
 }

@@ -815,8 +815,10 @@ Includes all widget-related elements
 .twitter_stream li .tweet_content { margin:0; }
 .twitter_stream li .tweet_date { display:block; text-align:right; }
 
+
 /* ---------------------------------------------------------------------- */
-/* CUSTOM CSS SECTION */
+/* CUSTOM CSS NON THEME DEFAULT SECTION */
+/* ---------------------------------------------------------------------- */
 
 #slider .pages{
 	z-index: 10 !important; /*menu hover bug fix*/
@@ -825,3 +827,476 @@ Includes all widget-related elements
 #gaiframe{
 	display:none !important;
 }
+
+
+
+/*Apps page */
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.post-template-template-apps-php #main{
+	padding-top: 30px;
+}
+
+.app-item.post-entry .kk-star-ratings{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	margin: 0px;
+}
+
+.app-item.post-entry.app-item,
+.app-item.post-entry.app-item{
+	padding: 20px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	position: relative;
+	/*box-shadow: inset 0 0 10px #999;*/
+	box-shadow: 0 0 5px #999;
+	border: 1px solid #fff;
+	background: #fafafa;
+	margin-bottom: 20px;
+}
+
+.app-item.post-entry h1,
+.app-item.post-entry h1{
+	display:inline-block;
+	margin-top: 5px;
+}
+
+.app-item.post-entry .app-tags,
+.app-item.post-entry .app-links,
+.app-item.post-entry .app-gallery,
+.app-item.post-entry .app-details{
+	margin-bottom: 25px;
+}
+
+.app-item.post-entry .app-icon{
+	float:left;
+	margin-right: 15px;
+}
+
+.app-item.post-entry .app-tags a{
+	background: #5696B3;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 3px 6px;
+	color: #fff;
+	margin: 0 5px 2px 0;
+	font-size: 1.1em;
+	max-width: 80px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+
+.app-item.post-entry .app-tags a:hover{
+	background: #1a5a78;
+	text-decoration: none;
+}
+
+.app-item.post-entry .app-overview{
+	clear:both;
+}
+
+.app-item.post-entry .app-gallery .app-screenshots ul{
+	max-height: 450px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	margin-bottom: 25px;	
+	margin: 0;
+}
+
+.app-item.post-entry .app-gallery ul li:first-child{
+	margin-left: 0px;
+}
+
+.app-item.post-entry .app-gallery ul li{
+	display:inline-block;
+	background: none;
+	vertical-align: top;
+}
+
+.app-item.post-entry .app-gallery a img{
+	max-width: 300px !important;
+}
+
+.app-item.post-entry .app-link-item{
+	padding-right: 15px;
+	margin-right: 15px;
+	border-right: 1px dotted #666;
+	display: inline-block;
+	vertical-align: middle;
+	height: 40px;
+}
+
+.app-item.post-entry .app-link-item:last-child{
+	border: none;
+}
+
+.app-item.post-entry .app-link-item a{
+	font-size: 1.2em;
+	display:inline-block;
+}
+
+.app-item.post-entry .app-link-item a img{
+	margin-bottom: 0px;
+}
+.app-item.post-entry .app-link-item a.button{
+	font-size: 1.2em;
+	padding: 5px 8px;
+	border-radius: 3px;
+	margin: 0px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.app-item.post-entry .app-details .app-details-item{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	padding-left: 15px;
+	width: 20%;
+	height: 40px;
+	float: left;
+	border-left: 1px dotted #666;
+}
+.app-item.post-entry .app-details .app-details-item:first-child{
+	border-left: 0px;
+	padding-left: 0px;
+}
+
+.app-item.post-entry .app-details .app-details-item span{
+	font-weight: bold;
+	display:block;
+	margin-bottom: 5px;
+}
+
+/*Apps browse */
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.page-template-app-browse-php h3{
+	text-transform: uppercase;
+	font-size: 1.3em;
+}
+
+dl.app-tabs{
+	border-bottom: 1px solid #ddd;
+	margin: 20px 0;
+}
+
+.app-tabs dd{
+	display:inline-block;
+	padding: 10px 15px;
+	margin-bottom: 0px;
+}
+.app-tabs dd.active{
+	background: #f6f6f6;
+	border-top: 3px solid #278ab7;
+}
+
+.page-template-app-browse-php .app-search-container{
+	background: #f6f6f6;
+	width: 80%;
+	float:right;
+	padding: 10px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.page-template-app-browse-php .app-search-container input[type="text"]{
+	width: 80%;
+	display: inline-block;
+	height: 38px;
+	margin: 0px;
+	padding: 22px 8px;
+}
+.page-template-app-browse-php .app-search-container button{
+	float:right;
+	width: 15%;
+	margin: 0px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font-size: 1.3em;
+}
+
+.app-search-container fieldset{
+	margin-top: 0px;
+}
+
+.page-template-app-browse-php .app-count-container{
+	text-transform: uppercase;
+	font-weight:bold;
+	color: #000;
+	font-size: 1.3em;
+	white-space:nowrap;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	text-align: center;
+	background: #f6f6f6;
+	width: 16.66667%;
+	float:left;
+	overflow:hidden;
+	padding: 5px;
+}
+.page-template-app-browse-php .app-count-container span{
+	font-size: 2em;
+	color: #278ab7;
+}
+
+.page-template-app-browse-php .app-list-container,
+.page-template-app-browse-php .app-featured-container{
+	margin-bottom: 25px;
+}
+
+.page-template-app-browse-php .app-featured-container ul,
+.page-template-app-browse-php .app-featured-container ul li{
+	list-style:none;
+	margin: 0px;
+}
+
+.page-template-app-browse-php .app-featured{
+	float:left;
+	width: 33.33333%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	padding: 0px 15px;
+}
+
+.page-template-app-browse-php .app-featured:first-child{
+	padding-left: 0px;
+}
+.page-template-app-browse-php .app-featured:last-child{
+	padding-right: 0px;
+}
+
+.page-template-app-browse-php .featured-app-item{
+	background-size:cover !important;
+	height: 450px;
+	width: 100%;
+	display:block;
+	position: relative;
+	overflow:hidden;
+}
+
+.page-template-app-browse-php .featured-app-item .featured-app-item-details{
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	left: 0;
+	bottom: -175px;
+	padding: 12px;
+	color: #fff;
+	height: 200px;
+}
+
+.page-template-app-browse-php .featured-app-item:hover .featured-app-item-details{
+	bottom: 0px;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.page-template-app-browse-php .featured-app-item h4{
+	font-size: 1.4em;
+	color: #fff;
+	margin: 0 0 15px 0;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+.page-template-app-browse-php .featured-app-item p{
+	line-height: 1.55em;
+}
+
+
+.page-template-app-browse-php .app-latest{
+	width: 50%;
+	padding-right: 15px;
+	float:left;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.page-template-app-browse-php .app-top-rated{
+	width: 50%;
+	padding-left: 15px;
+	float:right;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+@media ( max-width : 767px) {
+	.page-template-app-browse-php .app-count-container{
+		display: none;
+	}
+	.page-template-app-browse-php .app-search-container{
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.page-template-app-browse-php li.app-featured{
+		width: 100%;
+		margin-bottom: 25px !important;
+		padding: 0px;
+		float:none;
+	}
+	.page-template-app-browse-php li.app-featured .featured-app-item-details{
+		bottom: 0px;
+	}
+	.page-template-app-browse-php .app-latest,
+	.page-template-app-browse-php .app-top-rated{
+		width: 100%;
+		padding: 0px;
+		float:none;
+		margin-bottom: 25px;
+	}
+}
+
+
+.search-results .post-entry h1{
+	font-size: 2em;
+}
+
+.search-results .post-entry .app-icon img{
+	width: 65px;
+	height: 65px;
+}
+
+.search-results .post-entry .app-count-container{
+	font-size: 1em;
+	padding: 17px 0;
+}
+.search-results .post-entry .app-count-container span{
+	font-size: 2em;
+}
+
+/*Apps item condensed */
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+.app-item-condensed{
+	padding: 7px;
+	position: relative;
+	background: #f6f6f6;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+}
+
+.app-item-condensed h4{
+	display:inline-block;
+	margin: 5px 0 2px 0;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+.app-item-condensed .kk-star-ratings{
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	margin: 0px !important;
+	width: 90px;
+}
+
+.app-item-condensed .kk-star-ratings .kksr-stars, 
+.app-item-condensed .kk-star-ratings .kksr-stars .kksr-fuel, 
+.app-item-condensed .kk-star-ratings .kksr-stars a{
+	height: 18px !important;
+}
+.app-item-condensed .kk-star-ratings .kksr-stars a{
+	width: 18px !important;
+}
+
+.app-item-condensed .kk-star-ratings .kksr-star.gray,
+.app-item-condensed .kk-star-ratings .kksr-star.orange,
+.app-item-condensed .kk-star-ratings .kksr-star.yellow{
+	background-size: 18px 18px;
+}
+
+.app-item-condensed .kk-star-ratings .kksr-legend{
+	display:none !important;
+}
+
+.app-item-condensed .app-icon{
+	float:left;
+	width: 80px;
+	margin-right: 10px;
+}
+
+.app-item-condensed .app-info{
+	display:inline-block;
+	min-height: 80px;
+	line-height: 1.2em;
+}
+
+.app-item-condensed .app-tags a{
+	background: #5696B3;
+	border-radius: 3px;
+	padding: 2px 4px;
+	color: #fff;
+	margin: 0 5px 2px 0;
+	font-size: 0.8em;
+}
+
+.app-item-condensed .app-tags a:hover{
+	background: #1a5a78;
+	text-decoration: none;
+}
+
+.app-item-condensed .app-overview{
+	clear:both;
+}
+
+.app-item-condensed .app-description p{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.app-item-condensed .app-details{
+	margin-bottom: 10px;
+}
+
+.app-item-condensed .app-details .app-version,
+.app-item-condensed .app-details .app-version,
+.app-item-condensed .app-details .app-updated,
+.app-item-condensed .app-details .app-size{
+	display:none;
+}
+
+.app-item-condensed .app-details .app-developer a{
+	color: #666;
+	font-size: 0.9em;
+}
+
+.app-item-condensed .app-details .app-price{
+	position: absolute;
+	color: #aaa;
+	bottom: 5px;
+	right: 5px;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+.app-item-condensed .app-details .app-details-item span{
+	margin-bottom: 5px;
+	display:none;
+}
+
+
+

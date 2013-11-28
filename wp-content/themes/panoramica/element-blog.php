@@ -3,8 +3,8 @@
   This template is used to display individual blog entries.
  */
 ?>
-
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>"> 
+
 	<?php if(!is_singular()): ?>
 	<h2 class="title">
 		<a href="<?php the_permalink(); ?>" title="<?php printf(esc_attr__('Go to %s', 'cpotheme'), the_title_attribute('echo=0')); ?>" rel="bookmark"><?php the_title(); ?></a>
