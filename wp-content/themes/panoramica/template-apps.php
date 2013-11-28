@@ -27,6 +27,7 @@ Template Name Posts: Apps
 					<div class='app-overview'>
 						<div class='app-description'>
 							<p><?php echo isset($post_meta["app_description"][0]) ? $post_meta["app_description"][0] : "no description" ?></p>
+							<?php the_content() ?>
 						</div>
 						<div class='app-links'>
 							<?php if (isset($post_meta["app_link_web"])): ?>

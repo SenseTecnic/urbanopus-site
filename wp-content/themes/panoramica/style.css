@@ -1298,5 +1298,7 @@ dl.app-tabs{
 	display:none;
 }
 
-
+.app-description .synved-social-button{
+	display:none;
+}
 
