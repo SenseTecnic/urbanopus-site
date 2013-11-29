@@ -19,10 +19,10 @@
 define('DB_NAME', 'urbanopus_site');
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', 'uo_user');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', 'urbanOpusAdmin');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -42,15 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
-
+define('AUTH_KEY',         '8t/4z:pSli4J_|._E<zm5BtU@.O-X{7}QFNTMnpKg81kQoYra1{jl<6DJ9zk&7*>');
+define('SECURE_AUTH_KEY',  '<|gV]zI^6&YI1VLQ]!vRv,nZis~Rw%Ij>Q@Q}3dA(gw-.&s]xQ;/@T4s%sgQvT^v');
+define('LOGGED_IN_KEY',    '7}cRv_VE+_xR||2e{mP}=6F0C46Pv+et|}CB.TM-Sps7VQVqx?|[<;[1JySK>!-~');
+define('NONCE_KEY',        '={[cP4+AL!>4oeP.. DiDxB%_+HU8TU8Q7_+23<d00jN@pgMZwf30H>b(V14Y>dr');
+define('AUTH_SALT',        '/~]h8r7OH4q0r&@JhFKSw{@ZJwU-| ^&.!e#q/|[=7zSGIyOC|t+S-=k9wy,z=Rn');
+define('SECURE_AUTH_SALT', '!?B;-2?VVePYZX~trQH{[=[&,nd1-rL5ZuRng}JGyvn]|:ZGy]K5C>:3HN{a[9u+');
+define('LOGGED_IN_SALT',   'Np|{Q7V5/{X0hbbU1 $w:zmXoFsjYz$0x7Br}]hT!8l|ykk/J{0Aeb+w{Mb+Az&=');
+define('NONCE_SALT',       'I#P&qcZnuw]5Y17s91~xTn#8xpnNE+=#<bov609KYc;C?s1iP0{-7-e|6uBlSY-P');
 /**#@-*/
 
 /**
@@ -88,3 +87,11 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+
+/* ADDITIONAL NON DEFAULT CONFIG 
+ * These settings are added specifically for the urbanopus landing page
+ */
+define("FEATURED_APP_1", 454);
+define("FEATURED_APP_2", 436);
+define("FEATURED_APP_3", 448);
